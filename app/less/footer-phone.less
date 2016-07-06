@@ -1,0 +1,92 @@
+footer{
+  background-color: @text-color;
+  color: #fff;
+  padding: 10px 0;
+  a{
+    color: #fff;
+  }
+  .logo-footer{
+    .col-4;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .contacts{
+    .col-8;
+    list-style: none;
+    li{
+      margin-bottom: 5px;
+    }
+    .adress{
+      display: block;
+      &:before{
+        margin: 0;
+        top: 3px;
+      }
+    }
+    .phone{
+      font-size: 18px;
+    }
+  }
+  .copypast{
+
+    .col-12;
+    text-align: center;
+    span{
+      display: block;
+    }
+  }
+  .phone, .mail, .adress{
+    padding-left: 18px;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  .phone:before, .mail:before, .adress:before{
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .phone{
+    .ffbold;
+    line-height: 30px;
+    &:before{
+      content: '';
+      .sprite(@icon-mail);
+    }
+  }
+  .mail{
+    .ffbold;
+    line-height: 24px;
+    font-size: 15px;
+    &:before{
+      content: '';
+      .sprite(@icon-phone);
+    }
+  }
+  .adress{
+    .fflite;
+    font-size: 15px;
+    line-height: 24px;
+    &:before{
+      content: '';
+      .sprite(@icon-map);
+    }
+  }
+  .copypast{
+    .col-12;
+    .fflite;
+    font-size: 18px;
+    line-height: 24px;
+    span{
+      display: block;
+      &:first-child{
+        border-top: 1px solid grey;
+      }
+    }
+    a{
+      color: #fff;
+    }
+  }
+}
